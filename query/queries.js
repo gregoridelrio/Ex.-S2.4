@@ -56,7 +56,7 @@ db.restaurants.find({"$or":[{"borough":"Staten Island"},{"borough":"Queens"},{"b
 db.restaurants.find({"borough" : {"$nin":["Staten Island", "Queens", "Bronx", "Brooklyn"]}}, {"restaurant_id":1, "name":1, "borough":1,"cuisine":1, "_id": 0 })
 
 // 20. Trobar restaurant_id, name, borough i cuisine amb marcador no superior a 10.
-
+db.restaurants.find({"grades.score": {"$lte" : 10}}, {"restaurant_id":1, "name":1, "borough":1,"cuisine":1, "_id": 0 })
 
 // 21. Trobar restaurants que preparen peix, no 'American' ni 'Chinees', o nom comença amb 'Wil'.
 
