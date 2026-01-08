@@ -44,7 +44,7 @@ db.restaurants.find({"name":/^Wil/}, { "restaurant_id":1, "name":1, "borough":1,
 db.restaurants.find({"name":/ces$/}, { "restaurant_id":1, "name":1, "borough":1, "cuisine" :1, "_id": 0 })
 
 // 16. Trobar restaurant_id, name, borough i cuisine on el nom conté 'Reg'.
-
+db.restaurants.find({"name":/Reg/}, { "restaurant_id":1, "name":1, "borough":1, "cuisine" :1, "_id": 0 })
 
 // 17. Trobar restaurants del Bronx que preparen cuina americana o xinesa.
 
