@@ -38,13 +38,13 @@ db.restaurants.find({"cuisine" : {"$ne" : "American"}, "grades.score" : {"$gt" :
 db.restaurants.find({"cuisine":{"$ne":"American"},"grades.grade":{"$eq":"A"}, "borough":{"$ne":"Brooklyn"}}, { "_id": 0 }).sort({"cuisine": -1})
 
 // 14. Trobar restaurant_id, name, borough i cuisine on el nom comença amb 'Wil'.
-db.restaurants.find({"name":/^Wil/}, { "restaurant_id":1, "name":1, "borough":1, "cuisine" :1},{ "_id": 0 })
+db.restaurants.find({"name":/^Wil/}, { "restaurant_id":1, "name":1, "borough":1, "cuisine" :1,"_id": 0 })
 
 // 15. Trobar restaurant_id, name, borough i cuisine on el nom acaba en 'ces'.
-db.restaurants.find({"name":/ces$/}, { "restaurant_id":1, "name":1, "borough":1, "cuisine" :1},{ "_id": 0 })
+db.restaurants.find({"name":/ces$/}, { "restaurant_id":1, "name":1, "borough":1, "cuisine" :1,"_id": 0 })
 
 // 16. Trobar restaurant_id, name, borough i cuisine on el nom conté 'Reg'.
-db.restaurants.find({"name":/Reg/}, { "restaurant_id":1, "name":1, "borough":1, "cuisine" :1},{ "_id": 0 })
+db.restaurants.find({"name":/Reg/}, { "restaurant_id":1, "name":1, "borough":1, "cuisine" :1},"_id": 0 })
 
 // 17. Trobar restaurants del Bronx que preparen cuina americana o xinesa.
 db.restaurants.find({"borough":"Bronx", "$or":[{"cuisine":"American"},{"cuisine" : "Chinese"}]}, { "_id": 0 })
