@@ -73,7 +73,7 @@ db.restaurants.find({"$and": [{"grades.1.grade":"A"}, {"grades.1.score":9},{"gra
 db.restaurants.find({}, { "_id": 0 }).sort({"name":1})
 
 // 26. Ordenar els noms dels restaurants en ordre descendent, mostrant totes les columnes.
-
+db.restaurants.find({}, { "_id": 0 }).sort({"name":-1})
 
 // 27. Ordenar cuisine ascendent i borough descendent.
 
