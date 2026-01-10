@@ -76,7 +76,7 @@ db.restaurants.find({}, { "_id": 0 }).sort({"name":1})
 db.restaurants.find({}, { "_id": 0 }).sort({"name":-1})
 
 // 27. Ordenar cuisine ascendent i borough descendent.
-
+db.restaurants.find({}, { "_id": 0 }).sort({"cuisine":1,"borough":-1 })
 
 // 28. Mostrar direccions que no contenen el carrer.
 
