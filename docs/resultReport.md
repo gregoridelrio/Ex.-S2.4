@@ -90,18 +90,8 @@
 - ✔️ OK - Query **[ 29 ]**
 
 ---
-- ❌ MISMATCH - Query **[ 30 ]** Result does not match expected output.
-
-
-🧩 Mismatch at position 0:
-- **Expected:** {"grades":[{},{},{},{},{}],"name":"Morris Park Bake Shop","restaurant_id":30075445}
-- **Actual:** {"address":{},"borough":"Bronx","cuisine":"Bakery","grades":[{},{},{},{},{}],"location":{},"name":"Morris Park Bake Shop","restaurant_id":30075445}
+- ✔️ OK - Query **[ 30 ]**
 
 ---
-- ❌ MISMATCH - Query **[ 31 ]** Result does not match expected output.
-
-
-🔢 Different result lengths: 
-- **Expected:** 10
-- **Got:** 7
+- ✔️ OK - Query **[ 31 ]**
 
